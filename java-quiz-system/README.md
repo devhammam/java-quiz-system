@@ -18,16 +18,16 @@
 ## 🗂️ هيكل المشروع
 
 src/
-├── application/ # واجهات المستخدم
-│ ├── Login.java # شاشة الدخول
-│ ├── Rules.java # شاشة القواعد
-│ ├── Quiz.java # شاشة الاختبار
-│ ├── Score.java # شاشة النتائج
-│ └── QuestionManagerArt.java # لوحة التحكم
-└── database/ # إدارة البيانات
-├── DBConnection.java # اتصال قاعدة البيانات
-├── QuestionDAO.java # عمليات البيانات
-└── QuestionTableInit.java # تهيئة الجداول
+  ├── application/ # User Interfaces
+  │   ├── Login.java # Login Screen
+  │   ├── Rules.java # Rules Screen
+  │   ├── Quiz.java # Quiz Screen
+  │   ├── Score.java # Results Screen
+  │   └── QuestionManagerArt.java # Control Panel
+  └── database/ # Data Management
+      ├── DBConnection.java # Database Connection
+      ├── QuestionDAO.java # Data Operations
+      └── QuestionTableInit.java # Table Initialization
 
 
 
@@ -59,13 +59,13 @@ java -cp ".;libs/sqlite-jdbc-3.36.0.3.jar" src.application.Login
 🎮 كيفية الاستخدام
 تشغيل البرنامج: java Login
 
-إدخال اسم المستخدم
+1.إدخال اسم المستخدم
 
-قراءة القواعد والبدء في الاختبار
+2.قراءة القواعد والبدء في الاختبار
 
-الإجابة على الأسئلة مع المراقبة الزمنية
+3.الإجابة على الأسئلة مع المراقبة الزمنية
 
-عرض النتائج النهائية والإحصائيات
+4.عرض النتائج النهائية والإحصائيات
 
 
 
@@ -87,5 +87,6 @@ java -cp ".;libs/sqlite-jdbc-3.36.0.3.jar" src.application.Login
 الإبلاغ عن الأخطاء
 
 اقتراح ميزات جديدة
+
 
 تطوير وتحسين الكود
